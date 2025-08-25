@@ -40,7 +40,7 @@ Variables with high cardinality but predictive relevance were standardized:
     - 'Status' other than “Closed”
     - 'Borough' with "Unspecified" value
       
-7. Business Perspective
+## 7. Business Perspective
    
 - Each step ensures the dataset is clean, consistent, and predictive.
 - Focused on features that matter for SLA breach prediction, while removing irrelevant or noisy data.
