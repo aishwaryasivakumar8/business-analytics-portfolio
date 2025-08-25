@@ -7,6 +7,6 @@ This folder contains all the work related to data cleaning, standardization, and
 - New features were created to capture temporal context and workload indicators.
 - The dataset is prepared for SLA breach prediction and subsequent analysis.
 
-More details: [Data Cleaning Description](Data-Cleaning/Description.md)
+More details: [Data Cleaning Description](Description.md)
 
-Code: [Data Cleaning Python Notebook](Data-Cleaning/311_NYC_SR_Data_Cleaning.ipynb)
+Code: [Data Cleaning Python Notebook](311_NYC_SR_Data_Cleaning.ipynb)
