@@ -7,6 +7,7 @@ Variables with >80% missing values were removed. These variables add little pred
 ## 2. Irrelevant Columns
 Removed columns with high cardinality or limited relevance:
 'X Coordinate (State Plane)', 'Y Coordinate (State Plane)', 'Park Facility Name', 'Park Borough', 'Incident Address', 'Street Name', 'Cross Street 1', 'Cross Street 2', 'Agency Name', 'Landmark', 'Intersection Street 1', 'Intersection Street 2', 'City', 'BBL', 'Community Board', 'Location', 'Resolution Action Updated Date', 'Resolution Description'
+
 These are mostly text or address fields that add noise and do not improve SLA predictions.
 
 ## 3. Standardizing Columns
@@ -40,7 +41,8 @@ Variables with high cardinality but predictive relevance were standardized:
     - 'Borough' with "Unspecified" value
       
 7. Business Perspective
-Each step ensures the dataset is clean, consistent, and predictive.
-Focused on features that matter for SLA breach prediction, while removing irrelevant or noisy data.
-Standardization and grouping reduce complexity without losing critical insights.
-Feature engineering adds temporal and integrated context to test for better predictive modeling.
+   
+- Each step ensures the dataset is clean, consistent, and predictive.
+- Focused on features that matter for SLA breach prediction, while removing irrelevant or noisy data.
+- Standardization and grouping reduce complexity without losing critical insights.
+- Feature engineering adds temporal and integrated context to test for better predictive modeling.
