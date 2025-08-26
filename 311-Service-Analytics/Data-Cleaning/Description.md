@@ -3,10 +3,9 @@ This document explains the data cleaning, standardization, and feature engineeri
 
 ## 311 Service Level Agreements 
 - Rows in the SLA table with missing SLA Hours were removed as they were not managed by 311 and to ensure only eligible (Problem, Problem_Details) pairs are present.
-- Some (Problem, Problem_Details) pairs had multiple SLA values because the actual SLA depends on Additional_Details variable, which is not present in the 311_Service_Requests dataset.
-- To assign a single SLA per pair:
- - The majority SLA (most frequent value) was used when there was a clear majority.
- - For ties (equal frequency), the minimum SLA was selected to be strict and flagging potential SLA breaches.
+- Some (Problem, Problem_Details) pairs had multiple SLA values because the actual SLA depends on Additional_Details variable, which is not present in the 311_Service_Requests dataset. To assign a single SLA per pair:
+            - The majority SLA (most frequent value) was used when there was a clear majority.
+            - For ties (equal frequency), the minimum SLA was selected to be strict and flagging potential SLA breaches.
 
 This approach prevents row duplication and maintains a consistent, conservative dataset for SLA breach analysis and predictive modeling.
 
