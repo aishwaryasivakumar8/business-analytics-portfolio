@@ -43,6 +43,7 @@ I applied a 0.02 threshold to remove noisy features like ‘Address Type’ and 
 - After feature selection:
   - Train Acc: 0.868 | Train F1: 0.811
   - Test Acc: 0.841 | Test F1: 0.775
+
 The drop in accuracy/F1 was minimal, but the model became simpler and more interpretable. In real world use, this tradeoff is often preferred.
  
 ## Threshold Tuning
