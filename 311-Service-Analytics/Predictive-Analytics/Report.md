@@ -25,7 +25,8 @@ When I started this project, my goal was to build a predictive model that could 
  - Results:
    - Logistic & XGBoost were more stable.
    - Neural Network, Decision Tree, Random Forest overfit badly (training >> testing).
-       Overfit models would create too many false alarms by predicting breaches that aren’t real. For real-world use, I prioritized stability and interpretability and chose XGBoost as the best candidate.
+   
+   Overfit models would create too many false alarms by predicting breaches that aren’t real. For real-world use, I prioritized stability and interpretability and chose XGBoost as the best candidate.
  
 ## Model Development
 - I ran Randomized Search hyperparameter tuning over:
