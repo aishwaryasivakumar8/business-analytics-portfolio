@@ -1,7 +1,4 @@
 # 311 NYC Services - SLA Breach Prediction
-## Project Description
-When I started this project, my goal was to build a predictive model that could identify potential SLA (Service Level Agreement) breaches in NYC 311 non-emergency service requests. SLA breaches are rare but costly events as they signal inefficiencies, resource strain, and risk public trust in city services. So even though most requests are resolved on time, the ability to predict which ones are at risk of breaching allows decision makers to intervene early.
- 
 ## Preparing the Data
  - Removed rows with nulls in key columns to ensure data quality and avoid noise.
  - Created the target variable ‘SLA_Breach’
