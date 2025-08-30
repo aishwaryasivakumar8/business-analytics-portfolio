@@ -5,8 +5,8 @@ When I started this project, my goal was to build a predictive model that could 
 ## Preparing the Data
  - Removed rows with nulls in key columns to ensure data quality and avoid noise.
  - Created the target variable ‘SLA_Breach’
-         - If ‘Resolution Time’ (In hours) > ‘SLA Hours’ → SLA Breach (1)
-         - Else → No Breach (0).
+   - If ‘Resolution Time’ (In hours) > ‘SLA Hours’ → SLA Breach (1)
+   - Else → No Breach (0).
  - The target distribution showed imbalance. Most service requests resolve on time while SLA breaches are the minority. This actually matches real-world operations: SLA breaches are exceptions but the ones that matter most.
  - Converted ‘Created Date’ to datetime and filtered service requests after 2024-08-08. Since the downloaded dataset only started from August 1, using dates 1–7 wouldn’t provide a valid 7-day history. Beginning from August 8 ensured the lagging feature ‘Requests Past Week’ was meaningful and kept the model forward-looking and actionable.
  - Decided to keep both individual features and interaction features (like Borough × Agency). Tree-based models can learn nonlinear splits and interactions naturally. From a business perspective, keeping Borough × Agency is valuable because it reflects joint accountability because certain borough-agency pairs underperform consistently.
