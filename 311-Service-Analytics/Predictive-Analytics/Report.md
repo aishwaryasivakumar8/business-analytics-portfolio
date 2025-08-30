@@ -51,10 +51,12 @@ By default, classifiers use a 0.5 probability threshold. But in imbalanced probl
     - TP = 1487, TN = 6926
 - At optimal threshold (via F1 tuning):
     - TP = 1598, TN = 6762
+
 This adjustment improved recall for breaches by predicting more breaches, even though the F1 changed only slightly.
 Threshold tuning lets the city choose:
  - Lower threshold → catch more breaches early (at the cost of more false alarms).
  - Higher threshold → fewer false alarms, but risk missing breaches.
+
 This flexibility is critical for budget allocation and resource planning.
  
 ## Key Business Uses
