@@ -21,10 +21,10 @@ When I started this project, my goal was to build a predictive model that could 
      For XGBoost, newer versions support categorical features directly (enable_categorical=True), so the encoded integers are treated as categories rather than ordered numbers. Ordinal encoding was used here because SMOTE requires all features to be numeric, and enabling categorical in XGBoost ensures no artificial ordering bias.
  - Wrapped preprocessing + SMOTE-NC (oversampling for categorical imbalance) + classifier into a pipeline. SMOTE-NC was used to balance the target class while properly handling categorical features, improving model learning for the minority SLA breach cases.
  - I tested five baseline models:
-       - Logistic Regression, Neural Net, Decision Tree, Random Forest, XGBoost.
+   - Logistic Regression, Neural Network, Decision Tree, Random Forest, XGBoost.
  - Results:
-       - Logistic & XGBoost were more stable.
-       - Neural, Decision Tree, Random Forest overfit badly (training >> testing).
+   - Logistic & XGBoost were more stable.
+   - Neural Network, Decision Tree, Random Forest overfit badly (training >> testing).
        Overfit models would create too many false alarms by predicting breaches that aren’t real. For real-world use, I prioritized stability and interpretability and chose XGBoost as the best candidate.
  
 ## Model Development
