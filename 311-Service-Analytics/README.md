@@ -15,6 +15,6 @@ The Service Level Agreements data used in this project is from:
 
 - Export format: CSV
 
-[311 Sample Dashboard](311-Service-Analytics/311 Dashboard.png)
+[311 Sample Dashboard](311-Service-Analytics/311%20Dashboard.png)
 
 *Note: This is a sample dashboard based on a previously cleaned file. It may not exactly match the dashboard generated from the final cleaned data.*
