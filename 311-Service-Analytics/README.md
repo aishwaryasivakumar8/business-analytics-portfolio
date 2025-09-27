@@ -14,3 +14,7 @@ The Service Level Agreements data used in this project is from:
 [311 Service Level Agreements](https://catalog.data.gov/dataset/311-service-level-agreements)
 
 - Export format: CSV
+
+[311 Sample Dashboard](311-Service-Analytics/311 Dashboard.png)
+
+*Note: This is a sample dashboard based on a previously cleaned file. It may not exactly match the dashboard generated from the final cleaned data.*
